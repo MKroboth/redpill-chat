@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login/flutter_login.dart';
 import 'package:ncom/ctx_theme/theme/dynamic_theme.dart';
 import 'package:provider/provider.dart';
-
+import 'matrix_user_accounts_drawer_header.dart';
 import 'ctx_theme/widget/ctx_scaffold.dart';
 import 'direct_chat_view.dart';
 import 'group_view.dart';
@@ -26,6 +26,8 @@ class OverviewScreen extends StatelessWidget {
           drawer: Drawer(
             child: ListView(
               children: [
+                const MatrixUserAccountsDrawerHeader(
+                    accountName: "Test", matrixId: "@test:example.org"),
                 ListTile(
                   leading: const Icon(Icons.settings),
                   title: const Text("Settings"),

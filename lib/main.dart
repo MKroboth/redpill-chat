@@ -17,7 +17,8 @@ class NCOMApp extends StatelessWidget {
   static const routes = <String, Widget Function(BuildContext)>{
     "/login": Routes.loginBuilder,
     "/": Routes.overviewBuilder,
-    "/settings": Routes.settingsBuilder
+    "/settings": Routes.settingsBuilder,
+    "/accountSettings": Routes.accountSettingsBuilder,
   };
 
   // This widget is the root of your application.
@@ -44,7 +45,7 @@ class NCOMApp extends StatelessWidget {
         builder: (context, td, _) => MaterialApp(
           theme: td.materialLightTheme,
           darkTheme: td.materialDarkTheme,
-          initialRoute: "/",
+          initialRoute: "/login",
           routes: routes,
         ),
       ),

@@ -1,5 +1,8 @@
 ---
 theme:
+  colors:
+    primary:
+      name: green
   login:
     colors:
       primary:
