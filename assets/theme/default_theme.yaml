@@ -1,0 +1,16 @@
+---
+theme:
+  login:
+    colors:
+      primary:
+        name: green
+      accent:
+        name: amber
+        accent: true
+      error:
+        name: red
+        accent: true
+      page_color_light:
+        name: purple
+      page_color_dark:
+        name: purple
